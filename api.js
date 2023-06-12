@@ -1,3 +1,5 @@
+const API_URL = 'https://fsa-puppy-bowl.herokuapp.com/api/2302-ACC-ET-WEB-PT-A'; 
+
 const fetchAllPlayers = async () => {
     try {
       const response = await fetch(APIURL + 'players');
