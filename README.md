@@ -3,3 +3,5 @@ Team 2 Project by
 Bijin Biju
 Hunter Anderson
 Roig Rosa
+
+Mostly CSS and API.
