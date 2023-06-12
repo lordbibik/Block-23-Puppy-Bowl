@@ -27,7 +27,7 @@ async function fetchAllPlayers() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(playerObj)
+        body: JSON.stringify(playerData)
       });
       const data = await response.json();
       return data;
