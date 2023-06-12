@@ -1,8 +1,8 @@
 const API_URL = 'https://fsa-puppy-bowl.herokuapp.com/api/2302-ACC-ET-WEB-PT-A'; 
 
-const fetchAllPlayers = async () => {
-    try {
-      const response = await fetch(APIURL + 'players');
+async function fetchAllPlayers() {
+  try {
+    const response = await fetch(`${API_URL}/players`);
       const data = await response.json();
       return data;
     } catch (err) {
@@ -10,9 +10,9 @@ const fetchAllPlayers = async () => {
     }
   };
   
-  const fetchSinglePlayer = async (playerId) => {
-    try {
-      const response = await fetch(APIURL + `players/${playerId}`);
+  async function fetchSinglePlayer(playerId) {
+  try {
+    const response = await fetch(`${API_URL}/players/${playerId}`);
       const data = await response.json();
       return data;
     } catch (err) {
@@ -20,9 +20,9 @@ const fetchAllPlayers = async () => {
     }
   };
   
-  const addNewPlayer = async (playerObj) => {
-    try {
-      const response = await fetch(APIURL + 'players', {
+  async function addNewPlayer(playerData) {
+  try {
+    const response = await fetch(`${API_URL}/players`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -36,9 +36,9 @@ const fetchAllPlayers = async () => {
     }
   };
   
-  const removePlayer = async (playerId) => {
-    try {
-      const response = await fetch(APIURL + `players/${playerId}`, {
+  async function removePlayer(playerId) {
+  try {
+    const response = await fetch(`${API_URL}/players/${playerId}`, {
         method: 'DELETE'
       });
       const data = await response.json();
