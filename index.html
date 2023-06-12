@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- import JavaScript -->
-  <script defer src="script.js"></script>
-
-  <!-- import CSS -->
-  <link rel="stylesheet" href="styles.css">
-
-  <title>PuppyBowl</title>
+  <title>Super Puppy Bowl</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
+  <div id="new-player-form">
+    <h2>Add New Puppy</h2>
+    <form id="add-player-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="breed">Breed:</label>
+      <input type="text" id="breed" required>
+      <label for="image">Image:</label>
+      <input type="file" id="image" accept="image/*" required>
+      <button type="submit">Add Player</button>
+    </form>
+  </div>
+  
+  <div id="roster-container">
+    <h2>Puppy Roster</h2>
+    <div id="player-cards"></div>
+  </div>
 
-  <!-- form to add new players -->
-  <div id="new-player-form"></div>
-
-  <!-- container for all players -->
-  <div id="all-players-container"></div>
-
+  <script src="script.js" type="module"></script>
 </body>
-
 </html>
+
