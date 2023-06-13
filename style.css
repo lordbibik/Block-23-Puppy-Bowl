@@ -1,5 +1,102 @@
-*{
-  padding: 0;
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
   margin: 0;
-  box-sizing: border-box;
+  padding: 20px;
+}
+
+#new-player-form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333333;
+}
+
+form input {
+  margin-bottom: 10px;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #8c9eff;
+}
+
+#player-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player-card {
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border: 2px solid #dddddd;
+}
+
+.player-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #8c9eff;
+}
+
+.player-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333333;
+}
+
+.player-card p {
+  margin: 5px 0;
+  color: #666666;
+}
+
+.player-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#add-player-form button {
+  padding: 10px 20px;
+  background-color: #283894;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-player-form button:hover {
+  background-color: #6672ff;
+}
+.remove-button {
+padding: 8px 16px;
+background-color: #ff7272;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.remove-button:hover {
+background-color: #ff5454;
+}
+
+h2 {
+  text-align: center;
+  color: #6672ff;
 }
